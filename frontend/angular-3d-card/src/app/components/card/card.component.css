@@ -1,0 +1,37 @@
+.card {
+  min-height: 16rem;
+  width: 30rem;
+  border: solid;
+  border-radius: 20px;
+  background-color: aquamarine;
+  p {
+    padding: 1rem;
+  }
+}
+
+.sideB {
+    background-color: aquamarine;
+    transform: perspective(900px) rotateY(0);
+    transition: linear 1s ;
+ 
+
+}
+
+.sideA {
+    background-color: yellow;
+    transform: perspective(900px) rotateY(-180deg);
+    transition: linear 1s ;
+    p {
+     transform:   rotateY(-180deg);
+    }
+}
+
+.hide {
+    opacity: 0;
+    transition: all linear 2s;
+}
+
+
+.shown{
+    opacity: 1;
+}

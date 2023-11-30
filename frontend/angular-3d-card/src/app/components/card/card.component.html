@@ -1,0 +1,38 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div
+        class="col"
+        style="display: flex; justify-content: center; flex-direction: column; margin-top: 5rem;"
+      >
+        <div>
+          <h4 class="text-center">Click to rotate</h4>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+          <div class="card mt-5" id="card" (click)="toggleFlip()">
+            <div *ngIf="status">
+              <div id="sideA">
+                <p>side A</p>
+              </div>
+            </div>
+
+            <div *ngIf="!status">
+              <div id="sideB">
+                <div
+                  style="
+                    width: 100%;
+                    background-color: black;
+                    height: 4rem;
+                    margin-top: 20px;
+                  "
+                ></div>
+                <p>side B</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
